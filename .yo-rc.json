@@ -26,7 +26,6 @@
       "models": true,
       "mongooseModels": true,
       "mongoose": true,
-      "sequelize": true,
       "oauth": true,
       "googleAuth": true,
       "facebookAuth": true,

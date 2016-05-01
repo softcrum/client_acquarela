@@ -20,17 +20,5 @@ module.exports = {
           process.env.OPENSHIFT_MONGODB_DB_URL +
           process.env.OPENSHIFT_APP_NAME ||
           'mongodb://localhost/clientacquarela'
-  },
-
-  sequelize: {
-    uri:  process.env.SEQUELIZE_URI ||
-          'sqlite://',
-    options: {
-      logging: false,
-      storage: 'dist.sqlite',
-      define: {
-        timestamps: false
-      }
-    }
   }
 };

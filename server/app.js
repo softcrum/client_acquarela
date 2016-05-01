@@ -7,7 +7,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
-import sqldb from './sqldb';
 import config from './config/environment';
 import http from 'http';
 
@@ -39,11 +38,7 @@ function startServer() {
   });
 }
 
-sqldb.sequelize.sync()
-  .then(startServer)
-  .catch(function(err) {
-    console.log('Server failed to start due to error: %s', err);
-  });
+setImmediate(startServer);
 
 // Expose app
 exports = module.exports = app;

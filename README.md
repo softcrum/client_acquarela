@@ -12,7 +12,6 @@ This project was generated with the [Angular Full-Stack Generator](https://githu
 - [Ruby](https://www.ruby-lang.org) and then `gem install sass`
 - [Gulp](http://gulpjs.com/) (`npm install --global gulp`)
 - [MongoDB](https://www.mongodb.org/) - Keep a running daemon with `mongod`
-- [SQLite](https://www.sqlite.org/quickstart.html)
 
 ### Developing
 
